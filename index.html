@@ -788,7 +788,7 @@ document.getElementById('taskAddBtn').addEventListener('click', ()=>{
 document.getElementById('taskInput').addEventListener('keydown', (e)=>{ if(e.key==='Enter') document.getElementById('taskAddBtn').click(); });
 document.getElementById('noteTitleInput').addEventListener('keydown', (e)=>{ if(e.key==='Enter') document.getElementById('noteAddBtn').click(); });
 
-/* ---------- Settings: clear data ---------- */
+/* --------- Settings: clear data --------- */
 document.getElementById('clearNotesBtn').addEventListener('click', ()=>{
   if(confirm("Barcha eslatmalarni o'chirmoqchimisiz?")){ saveNotes([]); renderNotes(); }
 });
